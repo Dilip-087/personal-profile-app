@@ -14,12 +14,12 @@ spec:
       labels:
         app: profile-web
     spec:
-       containers:
-  - name: profile-container
-    image: gordon/personal-profile-app:latest
-    ports:
-    - containerPort: 80
-    imagePullPolicy: IfNotPresent
+      containers:
+      - name: profile-container
+        image: gordon/personal-profile-app:latest
+        ports:
+        - containerPort: 80
+        imagePullPolicy: IfNotPresent
 ---
 apiVersion: v1
 kind: Service
